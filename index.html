@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gruas Román</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gruas Román - Servicio Profesional de Grúas</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,7 +14,9 @@
         <ul class="nav-links">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#flota">Flota</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#equipo">Equipo</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
@@ -31,34 +33,111 @@
 
   <section id="servicios" class="section">
     <h2>Nuestros Servicios</h2>
-    <ul class="service-list">
-      <li>Grúas de arrastre ligero y pesado</li>
-      <li>Traslado de maquinaria</li>
-      <li>Asistencia vial 24 horas</li>
-      <li>Servicio en todo el estado</li>
-    </ul>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Grúas ligeras</h3>
+        <p>Servicio rápido y seguro para vehículos compactos y medianos.</p>
+      </div>
+      <div class="service-card">
+        <h3>Grúas pesadas</h3>
+        <p>Capacidad para maquinaria y vehículos de gran tamaño.</p>
+      </div>
+      <div class="service-card">
+        <h3>Traslado de maquinaria</h3>
+        <p>Movemos maquinaria industrial y agrícola con cuidado profesional.</p>
+      </div>
+      <div class="service-card">
+        <h3>Asistencia vial 24 horas</h3>
+        <p>Ayuda inmediata en carretera, cambio de llantas, arranque y más.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="nosotros" class="section bg-light">
-    <h2>¿Quiénes Somos?</h2>
-    <p>En Gruas Román contamos con más de 10 años de experiencia ofreciendo servicios de grúas confiables, rápidos y seguros. Nuestra flota está equipada para atender desde autos compactos hasta maquinaria pesada.</p>
+  <section id="flota" class="section bg-light">
+    <h2>Nuestra Flota</h2>
+    <div class="fleet-grid">
+      <div class="fleet-item">
+        <img src="img/grua_ligera.jpg" alt="Grúa ligera" />
+        <h4>Grúa ligera</h4>
+        <p>Ideal para autos y camionetas pequeñas.</p>
+      </div>
+      <div class="fleet-item">
+        <img src="img/grua_pesada.jpg" alt="Grúa pesada" />
+        <h4>Grúa pesada</h4>
+        <p>Perfecta para camiones y maquinaria pesada.</p>
+      </div>
+      <div class="fleet-item">
+        <img src="img/camion_traslado.jpg" alt="Camión traslado" />
+        <h4>Camión de traslado</h4>
+        <p>Transporte seguro para maquinaria y vehículos especiales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios" class="section">
+    <h2>Testimonios</h2>
+    <div class="testimonials">
+      <blockquote>
+        <p>"Excelente servicio, llegaron rápido y me ayudaron en un momento difícil. 100% recomendados."</p>
+        <footer>- Juan Pérez</footer>
+      </blockquote>
+      <blockquote>
+        <p>"Profesionales y atentos, el equipo de Gruas Román es confiable y eficiente."</p>
+        <footer>- María López</footer>
+      </blockquote>
+      <blockquote>
+        <p>"Mi maquinaria llegó sin un solo daño, un servicio impecable."</p>
+        <footer>- Carlos Martínez</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="equipo" class="section bg-light">
+    <h2>Nuestro Equipo</h2>
+    <p>Contamos con operadores capacitados y personal administrativo comprometido con la calidad del servicio.</p>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="img/operador1.jpg" alt="Operador Juan" />
+        <h4>Juan Gómez</h4>
+        <p>Operador principal</p>
+      </div>
+      <div class="team-member">
+        <img src="img/operador2.jpg" alt="Operador Ana" />
+        <h4>Ana Ruiz</h4>
+        <p>Supervisora de ruta</p>
+      </div>
+      <div class="team-member">
+        <img src="img/administracion.jpg" alt="Sofía" />
+        <h4>Sofía Morales</h4>
+        <p>Atención a clientes</p>
+      </div>
+    </div>
   </section>
 
   <section id="contacto" class="section">
-    <h2>Contáctanos</h2>
-    <p><strong>Teléfono:</strong> 55-1234-5678</p>
-    <p><strong>WhatsApp:</strong> 55-8765-4321</p>
-    <p><strong>Email:</strong> contacto@gruasroman.com</p>
-    <p>Atención 24/7, todos los días del año.</p>
+    <h2>Contacto</h2>
+    <p>¿Quieres solicitar un servicio o hacer una consulta? Llena el formulario o llámanos.</p>
+    <form class="contact-form" action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+      
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
   </section>
 
   <footer class="footer">
     <p>&copy; 2025 Gruas Román. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/525587654321" class="whatsapp" target="_blank" title="Chatea con nosotros por WhatsApp">
-    💬
-  </a>
+  <a href="https://wa.me/525587654321" class="whatsapp" target="_blank" title="Chatea con nosotros por WhatsApp">💬</a>
 </body>
 </html>
